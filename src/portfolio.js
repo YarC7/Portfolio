@@ -25,8 +25,10 @@ const greeting = {
   subTitle: emoji(
     "A passionate Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / Java and some other cool libraries and frameworks."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1DEKFZfojk8avOZdaUydYF6uMHSNPUWTW/view?usp=sharing", // Set to empty to hide the button
+  resumeFELink:
+    "https://drive.google.com/file/d/1g1sgwNYPAgoWYMQLV-UBlP_26w1imfxw/view",
+  resumeBELink:
+    "https://drive.google.com/file/d/1aAfsW_QKgGAgYTiyGPO_whE35_sSNxFY/view", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -72,10 +74,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    // {
-    //   skillName: "sass",
-    //   fontAwesomeClassname: "fab fa-sass"
-    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -92,10 +90,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
     {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
@@ -104,10 +98,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database"
     },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
@@ -131,7 +121,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Van Lang University",
-      logo: require("./assets/images/vanlang.jpg"),
+      logo: require("./assets/images/vanlang.png"),
       subHeader: "Bachelor of Information Technology",
       duration: "September 2020 - September 2024",
 
@@ -170,19 +160,23 @@ const workExperiences = {
       company: "URBAN VIETNAM",
       companylogo: require("./assets/images/1.png"),
       date: "Jan 2023 – June 2023",
-      desc: "Developed custom services to manage application state and communicate with back-end APIs",
+      desc: " Developed and maintained backend services using Java Spring framework, resulting in a 30% increase in API response times and improved user satisfaction.",
       descBullets: [
-        "Implemented a microservices architecture that improved system modularity and reduced dependencies between components. ",
-        "Refactored legacy code to improve reliability, scalability and maintainability."
+        "Collaborated with frontend developers to integrate backend services, enhancing the user experience for over 10,000 monthly active users. ",
+        " Implemented unit and integration tests, achieving a 95% code coverage and reducing bugs in production by 40%. Optimized database queries and application performance, leading to a 25% reduction in load times"
       ]
     },
-    // {
-    //   role: "Front-End Developer",
-    //   company: "Quora",
-    //   companylogo: require("./assets/images/quoraLogo.png"),
-    //   date: "May 2017 – May 2018",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    // },
+    {
+      role: "Front-End Developer",
+      company: "Ranus Tech",
+      companylogo: require("./assets/images/ranus.png"),
+      date: "Jan 2024 – June 2024",
+      desc: " Collaborated closely with UX/UI designers to translate design concepts into functional web interfaces, enhancing user engagement by 30%",
+      descBullets: [
+        "Developed and maintained frontend components and features using ReactJS and related libraries, improving application load time by 25%",
+        "Implemented responsive design principles to ensure optimal user experience across different devices, resulting in a 40% increase in mobile user satisfaction."
+      ]    
+    },
     // {
     //   role: "Software Engineer Intern",
     //   company: "Airbnb",
@@ -209,23 +203,34 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/git.png"),
-      projectName: "Back-End Ecommerce Website",
-      projectDesc: "Developed a full stack web application using modern technologies with java spring.",
+      projectName: "Admin Dashboard Management",
+      projectDesc: "Developed a  web application using modern technologies with React-Vite-TaiwindCSS.",
       footerLink: [
         {
           name: "github",
-          url: "https://github.com/YarC7/BE_Shopping_online"
+          url: "https://github.com/YarC7/Admin-Dashboard"
         }
       ]
     },
     {
       image: require("./assets/images/git.png"),
-      projectName: "Ecommerce Website",
-      projectDesc: "Developed a full stack web application using modern technologies with MERN.",
+      projectName: "Headless Ecommerce Website",
+      projectDesc: "Developed a full stack web application using modern technologies with Nextjs and Wixheadless solution.",
       footerLink: [
         {
           name: "github",
-          url: "https://github.com/YarC7/shopeefakee"
+          url: "https://github.com/YarC7/Ecommerce"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/git.png"),
+      projectName: "ShoeShop Spring Web",
+      projectDesc: "Developed shoeshop ecommerce website with java spring backend and thymeleaf frontend",
+      footerLink: [
+        {
+          name: "github",
+          url: "https://github.com/YarC7/shoeshop"
         }
       ]
     },
